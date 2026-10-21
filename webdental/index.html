@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental - Dr. Helar Núñez Camero</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #000814;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            box-sizing: border-box;
+        }
+        .btn-enviar:hover {
+            background-color: #e6b800 !important;
+        }
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN ESTILO DOCENTE -->
+    <header style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(0, 8, 20, 0.95); padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); z-index: 1000;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div style="color: #ffcc00; font-size: 24px; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+                <img src="img/favicon.png" alt="Logo" style="width: 30px; height: 30px; border-radius: 50%;"> 
+                DentalNuñez
+            </div>
+            <nav>
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mi</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#portafolio" class="nav-link">Portafolio</a>
+                <a href="#testimonios" class="nav-link">Testimonio</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN 1: INICIO (PORTADA PRINCIPAL) -->
+    <section id="inicio" style="padding: 160px 20px 100px 20px; text-align: center; background: linear-gradient(rgba(0,8,20,0.85), rgba(0,8,20,0.85)), url('img/banner_dental.jpg'); background-size: cover; background-position: center; color: #fff;">
+        <div style="margin-bottom: 20px;">
+            <img src="img/favicon.png" alt="Helar Núñez Camero" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffcc00; object-fit: cover; background-color: #fff;">
+        </div>
+        <h1 style="font-size: 36px; letter-spacing: 2px; margin: 10px 0; color: #fff; text-transform: uppercase;">HELAR NÚÑEZ CAMERO</h1>
+        <p style="max-width: 800px; margin: 20px auto; line-height: 1.6; font-size: 16px; color: #ccc;">
+            Cirujano Dentista con alta experiencia en la Docencia Universitaria y la Práctica Odontológica. Especializado en tratamientos modernos de Estética Dental, Ortodoncia Avanzada, Endodoncia y Rehabilitación Oral utilizando herramientas tecnológicas de última generación.
+        </p>
+    </section>
+
+    <!-- SECCIÓN 2: SOBRE MÍ / ESPECIALIDAD -->
+    <section id="sobre-mi" style="padding: 80px 20px; background-color: #fff; color: #333; text-align: center;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-size: 28px; color: #000814; margin-bottom: 20px; text-transform: uppercase;">SOBRE MÍ</h2>
+            <p style="font-size: 16px; line-height: 1.6; color: #555; max-width: 800px; margin: 0 auto 30px auto;">
+                Ofrezco una atención clínica dental respaldada por una rigurosa trayectoria académica. Mi compromiso primordial es la prevención, el diagnóstico de precisión y la ejecución de tratamientos personalizados sin dolor para restaurar la estética bucal de mis pacientes.
+            </p>
+            
+            <!-- Botón de WhatsApp Directo con tu número real -->
+            <a href="https://wa.me." target="_blank" style="display: inline-block; background-color: #25D366; color: #fff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 14px; text-transform: uppercase; margin-bottom: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                💬 Agendar Cita por WhatsApp
+            </a>
+
+            <h3 style="font-size: 22px; letter-spacing: 1px; margin-bottom: 30px; color: #000814; font-weight: bold; text-transform: uppercase;">ESPECIALIDAD</h3>
+            
+            <!-- Fila de 4 imágenes horizontales -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <img src="img/banner_dental.jpg" alt="Instalaciones Clínicas" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px;">
+                <img src="img/cuidados.jpg" alt="Cuidado Profesional" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px;">
+                <img src="img/dentales.jpg" alt="Material de Diagnóstico" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px;">
+                <img src="img/img01.jpg" alt="Procedimiento Dental" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: SERVICIOS -->
+    <section id="servicios" style="padding: 80px 20px; color: #fff; text-align: center; background-color: #000814;">
+        <h2 style="font-size: 28px; color: #ffcc00; margin-bottom: 50px; text-transform: uppercase;">SERVICIOS</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1100px; margin: 0 auto;">
+            
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">✨ Estética Dental</h3>
+                <p style="color: #ccc; line-height: 1.6;">Diseño de sonrisa estructurado con carillas de porcelana refinadas y resinas estéticas resistentes.</p>
+            </div>
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">🦷 Ortodoncia Avanzada</h3>
+                <p style="color: #ccc; line-height: 1.6;">Alineación maxilar mediante técnicas tradicionales y modernas de alineación invisible.</p>
+            </div>
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">💎 Implantes Dentales</h3>
+                <p style="color: #ccc; line-height: 1.6;">Sustitución de piezas dentarias fijas de alta biocompatibilidad y apariencia natural.</p>
+            </div>
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">🩺 Odontopediatría</h3>
+                <p style="color: #ccc; line-height: 1.6;">Tratamientos preventivos y adaptaciones clínicas pedagógicas especiales para infantes.</p>
+            </div>
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">⚡ Blanqueamiento</h3>
+                <p style="color: #ccc; line-height: 1.6;">Aclaramiento profesional acelerado por luz en consultorio para remover pigmentaciones profundas.</p>
+            </div>
+            <div>
+                <h3 style="color: #ffcc00; font-size: 20px;">🔬 Endodoncia Digital</h3>
+                <p style="color: #ccc; line-height: 1.6;">Tratamiento de conductos radiculares asistido mecánicamente para preservar la pieza dental.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: PORTAFOLIO -->
+    <section id="portafolio" style="padding: 80px 20px; background-color: #fff; text-align: center;">
+        <h2 style="font-size: 28px; color: #000814; margin-bottom: 40px; text-transform: uppercase;">PORTAFOLIO</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; max-width: 1100px; margin: 0 auto;">
+            <img src="img/img02.jpg" alt="Caso Clínico 1" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+            <img src="img/img03.jpg" alt="Caso Clínico 2" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+            <img src="img/img04.jpg" alt="Caso Clínico 3" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+            <img src="img/img05.jpg" alt="Caso Clínico 4" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+            <img src="img/img06.jpg" alt="Caso Clínico 5" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+            <img src="img/img07.jpg" alt="Caso Clínico 6" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;">
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: TESTIMONIOS (DISEÑO CIRCULAR) -->
+    <section id="testimonios" style="padding: 80px 20px; color: #fff; text-align: center; background-color: #000814;">
+        <h2 style="font-size: 28px; color: #ffcc00; margin-bottom: 50px; text-transform: uppercase;">TESTIMONIOS</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto;">
+            
+            <div style="text-align: center;">
+                <img src="img/img01.jpg" alt="Paciente 1" style="width: 140px; height: 140px; border-radius: 50%; border: 4px solid #ffcc00; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="margin: 10px 0 5px 0; font-size: 18px;">Juana Mendoza</h3>
+                <p style="color: #ccc; font-style: italic; line-height: 1.5; font-size: 14px;">"Excelente trato del Dr. Helar Núñez. El tratamiento cosmético con carillas cumplió todos mi requerimientos."</p>
+            </div>
+
+            <div style="text-align: center;">
